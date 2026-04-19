@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMDB- Top 10 por año</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="hero">
+    <h1>TOP 10 <span>Por año según TMDB</span></h1>
+
+    <div class="buscador">
+        <input type="number" id="yearInput" placeholder="Año" value="2024" min="1900" max="2030">
+        <button id="searchBtn">Buscar</button>
+    </div>
+</div>
+
+<div class="container">
+    <h2 id="resultsTitle">Selecciona un año</h2>
+    <div id="errorMsg" class="error oculto"></div>
+    <div id="moviesGrid" class="grid"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
