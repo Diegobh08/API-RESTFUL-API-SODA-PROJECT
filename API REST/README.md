@@ -43,7 +43,7 @@ Este proyecto requiere una **clave de API gratuita** de TMDB. Sigue estos pasos:
 4. En la sección **"Developer"**, haz clic en **"Crear"** (o "Create").
 5. Completa el formulario:
    - **Tipo de uso:** "Developer"
-   - **Nombre de la aplicación:** `CinePulse` (o el que quieras)
+   - **Nombre de la aplicación:** `Top 10` (o el que quieras)
    - **URL de la aplicación:** (puedes dejar en blanco o poner tu GitHub Pages)
    - **Descripción breve:** `Top 10 películas por año`
     
@@ -55,15 +55,50 @@ Este proyecto requiere una **clave de API gratuita** de TMDB. Sigue estos pasos:
 
 ---
 
+## API utilizada
+```
+Endpoint: https://api.themoviedb.org/3/discover/{año}
+
+Ejemplo:
+https://api.themoviedb.org/3/discover/2026
+```
+
+## EJEMPLO
+
+(https://api.themoviedb.org/3/discover/movie?api_key=673a9b11b53e35ee4a76aaffc34109ef&language=es-ES&sort_by=vote_average.desc&vote_count.gte=100&primary_release_year=2024&page=1)
+
+## Resultado
+```
+json
+{
+  "page": 1,
+  "results": [
+    {
+      "id": 123456,
+      "title": "Dune: Parte 2",
+      "vote_average": 8.9,
+      "release_date": "2024-02-28",
+      "overview": "Paul Atreides se une a los Fremen...",
+      "poster_path": "/8b8R8l88Qje9dnbOBYFmJoaU9k3.jpg",
+      "original_language": "en"
+    }
+  ],
+  "total_pages": 5,
+  "total_results": 45
+}
+```
+
 ## Estructura del proyecto
 
-`API-RESTFUL-API-SODA-PROJECT/
-│
-├── index.html # Estructura principal
-├── styles.css # Estilos visuales
-├── app.js # Lógica y llamadas a la API
-└── README.md # Documentación`
+```
+API-RESTFUL-API-SODA-PROJECT/
+├──API REST
+   ├── index.html # Estructura principal
+   ├── styles.css # Estilos visuales
+   ├── app.js # Lógica y llamadas a la API
+   ├──  README.md # Documentación`
 
+```
 ---
 
 ##  Instalación y uso local
@@ -91,6 +126,9 @@ Sigue estos pasos para ejecutar la aplicación en tu ordenador:
 # Consultas de top 10 de peliculas segun el año en JSON:
 ![JSON](Screenshots/movie2.png)
 
+ # Créditos
+- Desarrollador: [Diego Barrios]
+- API: The Movie Database (TMDB)
 
 
 
