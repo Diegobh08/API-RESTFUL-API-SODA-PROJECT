@@ -127,9 +127,10 @@ Sigue estos pasos para ejecutar la aplicación en tu ordenador:
 ![JSON](Screenshots/movie2.png)
 
  # Créditos
-- Desarrollador: [Diego Barrios]
+- Desarrollador: ***Diego Barrios***
 - API: The Movie Database (TMDB)
 
+⭐ Si te gusta este proyecto, dale una estrella en GitHub.
 
 
 
